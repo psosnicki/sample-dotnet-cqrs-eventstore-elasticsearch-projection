@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueTracker.Api", "IssueTracker.Api\IssueTracker.Api.csproj", "{0002EC29-A5E0-472A-B9A3-1FFC975DE7F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueTracker.Api", "src\IssueTracker.Api\IssueTracker.Api.csproj", "{0002EC29-A5E0-472A-B9A3-1FFC975DE7F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueTracker.Application", "IssueTracker.Application\IssueTracker.Application.csproj", "{4D56DADF-9391-4039-B40D-7C6D3DA47988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueTracker.Application", "src\IssueTracker.Application\IssueTracker.Application.csproj", "{4D56DADF-9391-4039-B40D-7C6D3DA47988}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueTracker.Domain", "IssueTracker.Domain\IssueTracker.Domain.csproj", "{CF0F284F-0FEA-4FDC-9E9B-DE05C20B10EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueTracker.Domain", "src\IssueTracker.Domain\IssueTracker.Domain.csproj", "{CF0F284F-0FEA-4FDC-9E9B-DE05C20B10EE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueTracker.Infrastructure", "IssueTracker.Infrastructure\IssueTracker.Infrastructure.csproj", "{E90CBCFC-DD85-4B27-BF4D-CA1CF4D59CEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueTracker.Infrastructure", "src\IssueTracker.Infrastructure\IssueTracker.Infrastructure.csproj", "{E90CBCFC-DD85-4B27-BF4D-CA1CF4D59CEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

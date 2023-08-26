@@ -23,7 +23,7 @@ services:
   issuetracker-api:
     build:
        context: ../
-       dockerfile: /IssueTracker.Api/Dockerfile
+       dockerfile: src/IssueTracker.Api/Dockerfile
     depends_on:
       - eventstore
       - elasticsearch

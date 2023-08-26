@@ -20,14 +20,3 @@ services:
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
-  issuetracker-api:
-    build:
-       context: ../
-       dockerfile: /IssueTracker.Api/Dockerfile
-    depends_on:
-      - eventstore
-      - elasticsearch
-    environment:
-      ASPNETCORE_ENVIRONMENT: Docker
-    ports:
-      - 5001:80

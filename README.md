@@ -1,5 +1,7 @@
 # sample-dotnet-cqrs-eventstore-elasticsearch-projection
 
+![build](https://github.com/psosnicki/sample-dotnet-cqrs-eventstore-elasticsearch-projection/actions/workflows/dotnet.yml/badge.svg)
+
 Sample .NET Core Web API - CQRS and Event Sourcing implementation with Event Store and Elasticsearch projections
 
 ![alt text](./png/overview.png "Overview")

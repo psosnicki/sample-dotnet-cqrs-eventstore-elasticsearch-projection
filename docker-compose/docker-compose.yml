@@ -20,13 +20,24 @@ services:
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
+    healthcheck:
+        test:
+            [
+            "CMD-SHELL",
+            "curl --fail http://localhost:9200 || exit 1",
+            ]
+        interval: 10s
+        timeout: 10s
+        retries: 120
   issuetracker-api:
     build:
        context: ../
        dockerfile: src/IssueTracker.Api/Dockerfile
     depends_on:
-      - eventstore
-      - elasticsearch
+        elasticsearch:
+          condition: service_healthy
+        eventstore:
+          condition: service_healthy      
     environment:
       ASPNETCORE_ENVIRONMENT: Docker
     ports:

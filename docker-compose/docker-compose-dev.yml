@@ -20,3 +20,12 @@ services:
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
+    healthcheck:
+        test:
+            [
+            "CMD-SHELL",
+            "curl --fail http://localhost:9200 || exit 1",
+            ]
+        interval: 10s
+        timeout: 10s
+        retries: 120
